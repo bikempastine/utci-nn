@@ -12,7 +12,7 @@ pip install git+https://github.com/bikempastine/utci-nn.git
 
 ## Usage
 ```python
-from utci_nn import NN_UTCI
+from utci_nn import calculate_utci
 
 result = NN_UTCI(Ta=20, Tr=25, va=1.0, rH=50)
 ```
@@ -35,10 +35,10 @@ Inputs outside this domain are handled with the `oob` parameter:
 - `oob="clamp"` — inputs are clamped to the valid range before prediction, matching the behaviour described in Bröde et al. (2012)
 ```python
 # Returns NaN for out-of-bounds inputs (default)
-result = NN_UTCI(Ta=20, Tr=25, va=1.0, rH=50, oob="nan")
+result = calculate_utci(Ta=20, Tr=25, va=1.0, rH=50, oob="nan")
 
 # Clamps out-of-bounds inputs to valid range before predicting
-result = NN_UTCI(Ta=20, Tr=25, va=1.0, rH=50, oob="clamp")
+result = calculate_utci(Ta=20, Tr=25, va=1.0, rH=50, oob="clamp")
 ```
 
 ## Reference
