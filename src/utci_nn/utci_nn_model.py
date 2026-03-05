@@ -45,7 +45,7 @@ _BOUNDS = {
 }
 
 # ── Main prediction function ─────────────────────────────────────────────────
-def NN_UTCI(
+def calculate_utci(
     Ta: Union[float, np.ndarray, pd.Series],
     Tr: Union[float, np.ndarray, pd.Series],
     va: Union[float, np.ndarray, pd.Series],
@@ -68,14 +68,16 @@ def NN_UTCI(
             "nan"   – return NaN for any out-of-bounds row (default)
             "clamp" – clamp each variable to its valid range before predicting
 
-    Returns
+    Returns:
     -------
     np.ndarray
-        UTCI values in °C. Shape matches the input arrays.
+        UTCI values in °C defind as UTCI offset plus Air temperature. Shape matches the input arrays.
 
     References
     ----------
-    Bröde et al. (2012). Int. J. Biometeorology, 56(3), 481-494.
+    Bröde, P., Fiala, D., Bla˙zejczyk, K. et al. Deriving the operational procedure
+    for the Universal Thermal Climate Index (UTCI). Int. J. Biometeorol. 56, 481–494
+    (2012).
     """
     if oob not in ("nan", "clamp"):
         raise ValueError(f"oob must be 'nan' or 'clamp', got '{oob}'")
