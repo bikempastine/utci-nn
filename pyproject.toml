@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "utci-nn"
+name = "NeuralUTCI"
 version = "0.1.0"
 description = "UTCI neural network approximator by Pastine et al."
 requires-python = ">=3.8"

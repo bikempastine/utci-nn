@@ -45,7 +45,7 @@ _BOUNDS = {
 }
 
 # ── Main prediction function ─────────────────────────────────────────────────
-def calculate_utci(
+def utci(
     Ta: Union[float, np.ndarray, pd.Series],
     Tr: Union[float, np.ndarray, pd.Series],
     va: Union[float, np.ndarray, pd.Series],
