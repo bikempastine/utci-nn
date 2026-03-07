@@ -7,6 +7,10 @@ name = "NeuralUTCI"
 version = "0.1.0"
 description = "UTCI neural network approximator by Pastine et al."
 requires-python = ">=3.8"
+authors = [
+    {name = "Bikem Pastine", email = "bikem.pastine@hertford.ox.ac.uk"}
+]
+license = {text = "MIT"}
 dependencies = [
     "torch",
     "scikit-learn",
