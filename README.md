@@ -7,7 +7,7 @@ https://link.springer.com/article/10.1007/s00484-011-0454-1
 
 ## Installation
 
-pip install git+https://github.com/bikempastine/utci-nn.git
+pip install git+https://github.com/bikempastine/NeuralUTCI.git
 
 
 ## Usage
