@@ -1,4 +1,4 @@
-# utci-nn
+# NeuralUTCI
 
 A neural network emulator for the Universal Thermal Climate Index (UTCI), as described in Pastine et al.
 
